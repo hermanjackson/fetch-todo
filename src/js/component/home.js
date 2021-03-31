@@ -1,24 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-export function Home() {
+export function TodoList() {
+	const [list, setlist] = useState([]);
+	const [inputValue, setInputValue] = useState("");
+	const handleKeyPress = e => {
+		if (e.key === "Enter" && inputValue !== "") {
+			setlist(
+				list.concat({
+					label: inputValue,
+					done: false
+				})
+			);
+			setInputValue("");
+		}
+	};
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+			<h1>to do list</h1>
+			<input
+				type="text"
+				onChange={e => setInputValue(e.target.value)}
+				onKeyPress={e => handleKeyPress(e)}
+				value={inputValue}></input>
+			<ul>
+				{list.map((item, index) => (
+					<li key={index}>{item.label}</li>
+				))}
+			</ul>
 		</div>
 	);
 }
