@@ -1,4 +1,169 @@
 @import "~bootstrap/scss/bootstrap.scss";
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-image: url(https://businesspartnermagazine.com/wp-content/uploads/2018/11/Whats-on-Your-Work-Desk.jpg); 
+    background-repeat: inherit;
+   background-size: contain;
+  font-family:'Dancing Script', cursive;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    background-image: url(https://i.pinimg.com/originals/80/c9/83/80c983e16fb0d9b07bcf6ff87425e60f.jpg);
+    background-repeat: no-repeat; background-position: center;
+    box-shadow:// 0 5px 10px 0 black, 0 15px 20px black;
+    
+  
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+   
+   
+}
+
+.words{
+    position: relative;
+    top: 15px;
+   
+    font-size: 18px;
+    
+  
+   
+     
+
+} 
+label{
+    position: relative;
+    right: 220px;
+   
+}
+.headerWrap{
+    
+    
+     position: relative; right: 300px;
+     bottom: 35px;
+     top: 15px;
+       width: 300px;
+    height: 300px;
+    float: left;
+
+
+}
+.firstHead{
+    position: relative;
+    top: 35px;
+    margin: auto; 
+    
+    width: 200px;
+    height: 100px;
+}
+.firstWords{
+    position: relative; right: 200px;
+    
+
+} 
+
+.wrap{
+    position: relative;
+   padding: 2px;
+   
+    left: 370px;
+  bottom: 280px;
+   width: 300px;
+   height: 300px;
+   
+    
+   
+}
+.inputName{
+    bottom: 37px;
+    font-family: 'Dancing Script', cursive;
+    right: 52px;
+    position: relative; margin: auto;;
+    padding: 2px;
+    border-style: none;
+    border: 0 0 0 0;
+    background: url(https://i.pinimg.com/originals/80/c9/83/80c983e16fb0d9b07bcf6ff87425e60f.jpg);
+    background-repeat: no-repeat; background-size: contain;
+
+    
+}
+
+
+ul{
+    position: relative; 
+    right: 40px;
+    bottom: 20px;
+    margin: auto;
+    width: 50px;
+}
+
+.trash{position: relative;left: 135px;}
+
+.trash:hover {
+    color: red;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+    
+     width: 100px;
+     position: relative;
+     right: 150px;
+     
+
+    }
+.redwords{
+    display: flex; align-items: center;
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 430px;
+
+    
+   
+    
+}
+span:hover {
+    color: red;
+    cursor: pointer;
+}
+span{
+   position: relative;
+   left: 500px;
+   
+   
+    border: none;
+}
+.inspireWords{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+    
+ 
+
 
 /* 
 
